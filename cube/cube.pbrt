@@ -1,0 +1,35 @@
+LookAt  -4 6 -4       
+        0 0 0
+        0 1 0
+
+Camera "perspective"
+    "float fov" 45
+
+Film "rgb"
+    "integer xresolution" 1280
+    "integer yresolution" 720
+    "string sensor" "nikon_d850"
+    "float whitebalance" 5000
+    "string filename" "cube.exr"
+
+Sampler "sobol" "integer pixelsamples" [4]
+
+Integrator "volpath" "integer maxdepth" 50
+
+WorldBegin
+
+LightSource "distant"
+    "point3 from" [1 2 -1]
+    "point3 to" [0 0 0]
+
+MakeNamedMedium "cube" "string type" "homogeneous"
+    "spectrum sigma_a" [200 0 900 0]
+    "spectrum sigma_s" [200 1 900 1]
+    "float g" [0]
+
+AttributeBegin
+    Scale 1.1 1.1 1.1
+    MediumInterface "cube" ""
+    Material "interface"
+    Shape "plymesh" "string filename" "cube.ply"
+AttributeEnd

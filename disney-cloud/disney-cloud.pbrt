@@ -1,6 +1,6 @@
-Integrator "graphvolpath" "integer maxdepth" [100]
+Integrator "volpath" "integer maxdepth" [100]
 
-Sampler "sobol" "integer pixelsamples" [1]
+Sampler "sobol" "integer pixelsamples" [16]
 
 Film "rgb" 
   "integer xresolution" [1280]
