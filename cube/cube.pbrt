@@ -1,10 +1,3 @@
-LookAt  -4 6 -4       
-        0 0 0
-        0 1 0
-
-Camera "perspective"
-    "float fov" 45
-
 Film "rgb"
     "integer xresolution" 1280
     "integer yresolution" 720
@@ -12,9 +5,16 @@ Film "rgb"
     "float whitebalance" 5000
     "string filename" "cube.exr"
 
-Sampler "sobol" "integer pixelsamples" [4]
+Sampler "sobol" "integer pixelsamples" [1]
 
-Integrator "volpath" "integer maxdepth" 50
+Integrator "graphvolpath" "integer maxdepth" 50
+
+LookAt  -4 6 -4       
+        0 0 0
+        0 1 0
+        
+Camera "perspective"
+    "float fov" 45
 
 WorldBegin
 
@@ -28,7 +28,7 @@ MakeNamedMedium "cube" "string type" "homogeneous"
     "float g" [0]
 
 AttributeBegin
-    Scale 1.1 1.1 1.1
+    Scale 1.01 1.01 1.01
     MediumInterface "cube" ""
     Material "interface"
     Shape "plymesh" "string filename" "cube.ply"
