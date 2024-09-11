@@ -1,15 +1,15 @@
 Film "rgb"
-    "integer xresolution" 1280
-    "integer yresolution" 720
+    "integer xresolution" 640
+    "integer yresolution" 480
     "string sensor" "nikon_d850"
     "float whitebalance" 5000
     "string filename" "cube.exr"
 
 Sampler "sobol" "integer pixelsamples" [1]
 
-Integrator "graphvolpath" "integer maxdepth" 50
+Integrator "graph" "integer maxdepth" 50
 
-LookAt  -4 6 -4       
+LookAt  -4 6 -4
         0 0 0
         0 1 0
         
