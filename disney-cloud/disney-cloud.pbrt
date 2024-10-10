@@ -1,6 +1,6 @@
-Integrator "volpath" "integer maxdepth" [100]
+Integrator "graph" "integer maxdepth" [100]
 
-Sampler "sobol" "integer pixelsamples" [16]
+Sampler "sobol" "integer pixelsamples" [8]
 
 Film "rgb" 
   "integer xresolution" [1280]
@@ -46,7 +46,7 @@ AttributeBegin
     "string filename" "wdas_cloud_quarter.nvdb"
     "spectrum sigma_a" [200 0 900 0]
     "spectrum sigma_s" [200 1 900 1]
-    "float g" [0.877]
+    "float g" [0]
     "float scale" [4]
   
   AttributeBegin

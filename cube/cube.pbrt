@@ -5,7 +5,7 @@ Film "rgb"
     "float whitebalance" 5000
     "string filename" "cube.exr"
 
-Sampler "sobol" "integer pixelsamples" [1]
+Sampler "sobol" "integer pixelsamples" [64]
 
 Integrator "graph" "integer maxdepth" 50
 
@@ -28,7 +28,7 @@ MakeNamedMedium "cube" "string type" "homogeneous"
     "float g" [0]
 
 AttributeBegin
-    Scale 1.01 1.01 1.01
+    Scale 1.05 1.05 1.05
     MediumInterface "cube" ""
     Material "interface"
     Shape "plymesh" "string filename" "cube.ply"
