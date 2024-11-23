@@ -1,14 +1,17 @@
-Integrator "graph" "integer maxdepth" [100]
+Integrator "graph" "integer maxdepth" [1]
 
-Sampler "sobol" "integer pixelsamples" [8]
+Sampler "sobol" "integer pixelsamples" [16]
 
 Film "rgb" 
+  # "integer xresolution" [640]
+  # "integer yresolution" [480]
+  # "string filename" "disney-cloud.exr"
   "integer xresolution" [1280]
   "integer yresolution" [720]
   "string filename" "disney-cloud-720p.exr"
-  #"integer xresolution" [1998]
-  #"integer yresolution" [1080]
-  #"string filename" "disney-cloud-hd.exr"
+  # "integer xresolution" [1998]
+  # "integer yresolution" [1080]
+  # "string filename" "disney-cloud-hd.exr"
 
 #Reverse X axis.
 Scale -1 1 1
