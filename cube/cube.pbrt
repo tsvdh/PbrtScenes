@@ -7,7 +7,7 @@ Film "rgb"
 
 Sampler "sobol" "integer pixelsamples" [64]
 
-Integrator "graph" "integer maxdepth" 1
+Integrator "graph" "integer maxdepth" 2
     # "bool visualizestrategies" false
     # "bool visualizeweights" true
 

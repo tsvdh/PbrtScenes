@@ -1,10 +1,11 @@
 {
     "graphBuilder": {
-        "dimensionSteps": 100,
-        "maxDepth": 2
+        "dimensionSteps": 1000,
+        "maxDepth": 2,
+        "edgeIterations": 10
     },
     "lightingCalculator": {
         "lightIterations": 20,
-        "transmittanceIterations": 1
+        "transmittanceIterations": 100
     }
 }
