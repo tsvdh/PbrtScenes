@@ -1,0 +1,25 @@
+{
+    "graphBuilder": {
+        "dimensionSteps": 5000,
+        "maxDepth": 10,
+        "edgeIterations": 50,
+        "radiusModifier": 10
+    },
+    "lightingCalculator": {
+        "lightIterations": 50,
+        "transmittanceIterations": 9
+    },
+    "subdivider": {
+        "subdivisions": 0,
+        "graphBuilder": {
+            "dimensionSteps": 50,
+            "maxDepth": 5,
+            "edgeIterations": 10,
+            "radiusModifier": 0.1
+        },
+        "lightingCalculator": {
+            "lightIterations": 10,
+            "transmittanceIterations": 4
+        }
+    }
+}
