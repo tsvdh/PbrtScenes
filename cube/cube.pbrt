@@ -5,9 +5,9 @@ Film "rgb"
     "float whitebalance" 5000
     "string filename" "cube.exr"
 
-Sampler "sobol" "integer pixelsamples" [256]
+Sampler "sobol" "integer pixelsamples" [64]
 
-Integrator "volpath" "integer maxdepth" 50
+Integrator "graph" "integer maxdepth" 50
     # "bool visualizestrategies" false
     # "bool visualizeweights" true
 
