@@ -11,7 +11,7 @@ Integrator "graph" "integer maxdepth" 50
     # "bool visualizestrategies" false
     # "bool visualizeweights" true
 
-LookAt  -30 40 -30
+LookAt  -0.30 0.40 -0.30
         0 0 0
         0 1 0
         
@@ -30,7 +30,7 @@ MakeNamedMedium "cube" "string type" "homogeneous"
     "float g" [0]
 
 AttributeBegin
-    Scale 10 10 10
+    Scale 0.125 0.125 0.125 
     MediumInterface "cube" ""
     Material "interface"
     Shape "plymesh" "string filename" "cube.ply"
