@@ -1,4 +1,4 @@
-Integrator "volpath" "integer maxdepth" [50]
+Integrator "volpathcustom" "integer maxdepth" [50]
 
 Sampler "sobol" "integer pixelsamples" [4096]
 
