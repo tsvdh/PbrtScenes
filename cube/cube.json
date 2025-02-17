@@ -1,36 +1,18 @@
 {
     "graphBuilder": {
-        "dimensionSteps": 10,
-        "iterationsPerStep": 1,
-        "maxDepth": 10,
+        "dimensionSteps": 200,
+        "iterationsPerStep": 500,
+        "maxDepth": 2,
         "edgeTransmittanceIterations": 20,
         "pointsOnRadius": 1,
         "radiusModifier": 10,
+        "addExtraEdges": false,
         "runInParallel": true
     },
     "lightingCalculator": {
-        "lightRayIterations": 200,
+        "lightRayIterations": 20,
         "pointsOnRadius": 1,
-        "bounces": [1],
-        "runInParallel": true
-    },
-    "subdivider": {
-        "subdivisions": 0,
-        "graphBuilder": {
-            "dimensionSteps": 10,
-            "iterationsPerStep": 100,
-            "maxDepth": 2,
-            "edgeTransmittanceIterations": 50,
-            "pointsOnRadius": 0,
-            "radiusModifier": 0.4,
-            "runInParallel": false
-        },
-        "lightingCalculator": {
-            "lightRayIterations": 50,
-            "pointsOnRadius": 0,
-            "bounces": [1],
-            "runInParallel": false
-        },
+        "bounces": [0, 1],
         "runInParallel": true
     }
 }

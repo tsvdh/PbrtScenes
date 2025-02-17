@@ -6,21 +6,19 @@ Film "rgb"
     "string filename" "cube.exr"
 
 # Sampler "sobol" "integer pixelsamples" [1024]
-# Integrator "volpath" "integer maxdepth" 10
+# Integrator "volpath" "integer maxdepth" 2
 
-Sampler "sobol" "integer pixelsamples" [16]
-Integrator "graph" 
-    "float graphRadiusMod" 10
-    "float renderRadiusMod" 20
+Sampler "sobol" "integer pixelsamples" [256]
+Integrator "graph" "float renderRadiusMod" 10
 
-LookAt  -0.30 0.40 -0.30
+# # LookAt  -0.30 0.40 -0.30
 # LookAt  -03 04.0 -03.0
-# LookAt  -030 040 -030 
+# # LookAt  -030 040 -030 
+#         0 0 0
+#         0 1 0
+LookAt  -04 00 -00
         0 0 0
         0 1 0
-# LookAt  -00 03 -00
-#         0 0 0
-#         0 0 1
         
 Camera "perspective"
     "float fov" 45
@@ -28,7 +26,7 @@ Camera "perspective"
 WorldBegin
 
 LightSource "distant"
-    "point3 from" [1 2 -1]
+    "point3 from" [0 2 0]
     "point3 to" [0 0 0]
 
 MakeNamedMedium "cube" "string type" "homogeneous"
@@ -37,8 +35,8 @@ MakeNamedMedium "cube" "string type" "homogeneous"
     "float g" [0]
 
 AttributeBegin
-    Scale 0.1 0.1 0.1
-    # Scale 1 1 1 
+    # Scale 0.1 0.1 0.1
+    Scale 1 1 1 
     # Scale 10 10 10 
     MediumInterface "cube" ""
     Material "interface"
