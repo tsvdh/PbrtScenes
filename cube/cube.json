@@ -1,12 +1,14 @@
 {
     "graphBuilder": {
         "dimensionSteps": 200,
-        "iterationsPerStep": 200,
+        "iterationsPerStep": 500,
         "maxDepth": 10,
         "edgeTransmittanceIterations": 10,
         "pointsOnRadius": 1,
-        "radiusModifier": 5,
+        "radiusModifier": 2,
         "addExtraEdges": false,
+        "pruneEdgeMinimum": 0,
+        "pruneVertexMinimum": 0,
         "runInParallel": true
     },
     "lightingCalculator": {
