@@ -1,19 +1,18 @@
 {
     "graphBuilder": {
-        "dimensionSteps": 200,
-        "iterationsPerStep": 500,
+        "dimensionSteps": 300,
+        "iterationsPerStep": 1,
         "maxDepth": 10,
-        "edgeTransmittanceIterations": 10,
-        "pointsOnRadius": 1,
-        "radiusModifier": 2,
+        "radiusModifier": 5,
         "addExtraEdges": false,
-        "pruneEdgeMinimum": 0,
-        "pruneVertexMinimum": 0,
-        "runInParallel": true
+        "reinforceSparseVertices": false,
+        "edgesForNotSparse": 4,
+        "reinforcementIterations": 1,
+        "pointsOnRadiusReinforcement": 1
     },
     "lightingCalculator": {
-        "lightRayIterations": 40,
-        "pointsOnRadius": 2,
+        "lightIterations": 20,
+        "pointsOnRadiusLight": 2,
         "bounces": [0, 1, 2, 4, 9],
         "runInParallel": true
     }

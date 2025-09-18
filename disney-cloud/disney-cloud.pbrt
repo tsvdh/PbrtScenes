@@ -1,25 +1,27 @@
-Integrator "volpathcustom" "integer maxdepth" [50]
+# Sampler "sobol" "integer pixelsamples" [1024]
+# Integrator "volpathcustom" "integer maxdepth" [10]
 
-Sampler "sobol" "integer pixelsamples" [4096]
+Sampler "sobol" "integer pixelsamples" [256]
+Integrator "graph" "float renderRadiusMod" 1
 
 Film "rgb" 
-  # "integer xresolution" [640]
+  # "integer xresolution" [854]
   # "integer yresolution" [480]
   # "string filename" "disney-cloud.exr"
-  "integer xresolution" [1280]
-  "integer yresolution" [720]
-  "string filename" "disney-cloud.exr"
-  # "integer xresolution" [1998]
-  # "integer yresolution" [1080]
-  # "string filename" "disney-cloud-hd.exr"
+  # "integer xresolution" [1280]
+  # "integer yresolution" [720]
+  # "string filename" "disney-cloud.exr"
+  "integer xresolution" [1920]
+  "integer yresolution" [1080]
+  "string filename" "disney-cloud-hd.exr"
 
 #Reverse X axis.
 Scale -1 1 1
 LookAt
   #Eye
-  648.064 -82.473 -63.856
+  64.8 -8.2 -6.4
   #Target
-  6.021 100.043 -43.679
+  6. 10.0 -4.4
   #Up vector
   0.273 0.962 -0.009
 #Converting fov according to the height/width ratio: 31.07 = 360/(2*PI) * 2*arctan(180/333*tan(54.43 * PI/360)).
@@ -27,6 +29,8 @@ Camera "perspective" "float fov" [31.07]
 
 
 WorldBegin
+
+Scale 0.1 0.1 0.1
 
 #Uniform illumination from all directions.
 # LightSource "infinite" "rgb L" [0.03 0.07 0.23]
@@ -39,9 +43,9 @@ LightSource "distant"
 # AttributeBegin
 #   Translate 0 -1000 0
 #   Scale 2000 2000 2000
-#   Rotate -90 1 0 0
+#   Rotate -90 1 0 0s
 #   Material "diffuse" "spectrum reflectance" [200 0.2 900 0.2]
-#   Shape "disk"  
+#   Shape "disk" 
 # AttributeEnd
 
 AttributeBegin

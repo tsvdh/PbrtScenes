@@ -5,11 +5,11 @@ Film "rgb"
     "float whitebalance" 5000
     "string filename" "cube.exr"
 
-# Sampler "sobol" "integer pixelsamples" [256]
+# Sampler "sobol" "integer pixelsamples" [1024]
 # Integrator "volpathcustom" "integer maxdepth" 10
 
-Sampler "sobol" "integer pixelsamples" [256]
-Integrator "graph" "float renderRadiusMod" 2
+Sampler "sobol" "integer pixelsamples" [64]
+Integrator "graph" "float renderRadiusMod" 5
 
 # LookAt  -0.30 0.40 -0.30
 # LookAt  -03 04.0 -03.0
