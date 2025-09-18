@@ -1,25 +1,27 @@
-Integrator "volpathcustom" "integer maxdepth" [50]
+Sampler "sobol" "integer pixelsamples" [64]
+Integrator "volpathcustom" "integer maxdepth" 10
 
-Sampler "sobol" "integer pixelsamples" [4096]
+# Sampler "sobol" "integer pixelsamples" [64]
+# Integrator "graph" "float renderRadiusMod" 1
 
 Film "rgb" 
-  # "integer xresolution" [640]
-  # "integer yresolution" [480]
+  "integer xresolution" [854]
+  "integer yresolution" [480]
   # "string filename" "disney-cloud.exr"
-  "integer xresolution" [1280]
-  "integer yresolution" [720]
-  "string filename" "disney-cloud.exr"
-  # "integer xresolution" [1998]
+  # "integer xresolution" [1280]
+  # "integer yresolution" [720]
+  # "string filename" "disney-cloud.exr"
+  # "integer xresolution" [1920]
   # "integer yresolution" [1080]
-  # "string filename" "disney-cloud-hd.exr"
+  "string filename" "disney-cloud-hd.exr"
 
 #Reverse X axis.
 Scale -1 1 1
 LookAt
   #Eye
-  648.064 -82.473 -63.856
+  648 -82 -63
   #Target
-  6.021 100.043 -43.679
+  6 100 -43
   #Up vector
   0.273 0.962 -0.009
 #Converting fov according to the height/width ratio: 31.07 = 360/(2*PI) * 2*arctan(180/333*tan(54.43 * PI/360)).
@@ -31,10 +33,18 @@ WorldBegin
 #Uniform illumination from all directions.
 # LightSource "infinite" "rgb L" [0.03 0.07 0.23]
 
-#Approximate the sun.
+# #Approximate the sun.
 LightSource "distant"
   "point3 to" [-0.5826 -0.7660 -0.2717]
   "rgb L" [2.6 2.5 2.3]
+
+# Two light sources
+# LightSource "distant"
+#     "point3 to" [0 1 0]
+#     "rgb L" [2.6 2.5 2.3]
+# LightSource "distant"
+#     "point3 to" [0 1 0]
+#     "rgb L" [2.6 2.5 2.3]
 
 # AttributeBegin
 #   Translate 0 -1000 0
@@ -53,11 +63,11 @@ AttributeBegin
     "float scale" [4]
   
   AttributeBegin
-    Translate -9.984 73.008 -42.64
-    Scale 206.544 140.4 254.592
+    Translate -10 73 -42.5
+    Scale 206 140 254
     Material "interface"
     MediumInterface "cloud" ""
       #Bounding sphere of a unit cube (of diameter equal to the cubic root of 3).
-      Shape "sphere" "float radius" [1.44224957031]
+      Shape "sphere" "float radius" [1.45]
   AttributeEnd
 AttributeEnd
