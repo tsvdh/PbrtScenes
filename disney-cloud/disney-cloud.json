@@ -1,14 +1,22 @@
 {
     "graphBuilder": {
         "dimensionSteps": 300,
-        "iterationsPerStep": 500,
+        "iterationsPerStep": 600,
         "maxDepth": 10,
         "radiusModifier": 1,
-        "addExtraEdges": false,
-        "reinforceSparseVertices": true,
-        "edgesForNotSparse": 3,
-        "reinforcementIterations": 5,
-        "pointsOnRadiusReinforcement": 0
+        "edgeReinforcement": {
+            "active": true,
+            "reinforcementIterations": 10,
+            "pointsOnRadiusReinforcement": 0,
+            "edgesForNotSparse": 3
+        },
+        "neighbourReinforcement": {
+            "active": true,
+            "reinforcementIterations": 2,
+            "pointsOnRadiusReinforcement": 1,
+            "neighboursForNotSparse": 7,
+            "neighbourRangeModifier": 2
+        }
     },
     "lightingCalculator": {
         "lightIterations": 3,
