@@ -1,27 +1,26 @@
 {
     "graphBuilder": {
-        "radiusModifier": 1,
-        "maxDepth": 10,
-        "addExtraEdges": false,
-        
         "dimensionSteps": 300,
-        "iterationsPerStep": 500,
-        
-        "transmittanceIterations": 10,
-        "pointsOnRadiusTransmittance": 1,
-        "runInParallel": true,
-        
-        "pruneEdgeMinimum": 0,
-        "pruneVertexMinimum": 0,
-        
-        "reinforceSparseAreas": true,
-        "neighboursForNotSparse": 3,
-        "reinforcementRadiusModifierMult": 2,
-        "reinforcementIterations": 3,
-        "pointsOnRadiusReinforcement": 1
+        "iterationsPerStep": 100,
+        "maxDepth": 10,
+        "radiusModifier": 1,
+        "neighboursForRenderSearchRange": 5,
+        "edgeReinforcement": {
+            "active": true,
+            "unsatisfiedAllowedRatio": 0.01,
+            "reinforcementRays": 1,
+            "edgesForNotSparse": 5
+        },
+        "neighbourReinforcement": {
+            "active": true,
+            "unsatisfiedAllowedRatio": 0.01,
+            "reinforcementRays": 10,
+            "neighboursForNotSparse": 5,
+            "neighbourRangeModifier": 2
+        }
     },
     "lightingCalculator": {
-        "lightIterations": 40,
+        "lightIterations": 3,
         "pointsOnRadiusLight": 1,
         "bounces": [0, 1, 2, 4, 9],
         "runInParallel": true
