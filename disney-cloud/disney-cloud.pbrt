@@ -1,10 +1,11 @@
-Sampler "sobol" "integer pixelsamples" [1]
-Integrator "volpath" "integer maxdepth" [1]
+# Sampler "sobol" "integer pixelsamples" [1]
+# Integrator "volpath" "integer maxdepth" [1]
 
-# Sampler "sobol" "integer pixelsamples" [64]
-# Integrator "graph" 
-#   "float renderRadiusMod" [1]
-#   "float neighbourRadiusMod" [2]
+Sampler "sobol" "integer pixelsamples" [64]
+Integrator "graph"
+
+# Sampler "sobol" "integer pixelsamples" [512]
+# Integrator "analyzer"
 
 Film "rgb" 
   "integer xresolution" [854]
