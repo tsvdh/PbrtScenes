@@ -1,0 +1,31 @@
+{
+    "graphBuilder": {
+        "dimensionSteps": 400,
+        "iterationsPerStep": 50,
+        "maxDepth": 5,
+        "radiusModifier": 3,
+        "renderSearchRange": {
+            "neighboursToUse": 5,
+            "runInParallel": true
+        },
+        "edgeReinforcement": {
+            "active": true,
+            "unsatisfiedAllowedRatio": 0.01,
+            "reinforcementRays": 3,
+            "edgesForNotSparse": 5
+        },
+        "neighbourReinforcement": {
+            "active": true,
+            "unsatisfiedAllowedRatio": 0.05,
+            "reinforcementRays": 10,
+            "neighboursForNotSparse": 5,
+            "neighbourRangeModifier": 3
+        }
+    },
+    "lightingCalculator": {
+        "lightIterations": 10,
+        "pointsOnRadiusLight": 1,
+        "bounces": [4],
+        "runInParallel": true
+    }
+}

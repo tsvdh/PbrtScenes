@@ -1,0 +1,18 @@
+{
+    "edges": {
+        "more_than_once": 254,
+        "more_than_once_ratio": 0.053484943
+    },
+    "in_node_path_length": {
+        "avg": 1.2595211,
+        "std": 0.56436646
+    },
+    "search_range": {
+        "avg": 0.4344928,
+        "std": 0.22164816
+    },
+    "sizes": {
+        "edges": 4749,
+        "vertices": 4149
+    }
+}
