@@ -1,0 +1,26 @@
+{
+    "amounts": {
+        "edges": 102196315,
+        "vertices": 3475392
+    },
+    "duration": {
+        "formatted": "36m 39s",
+        "seconds": 2199
+    },
+    "edges": {
+        "more_than_once": 22786352,
+        "more_than_once_ratio": 0.22296648
+    },
+    "in_node_path_length": {
+        "avg": 3.7420802,
+        "std": 0.8392684
+    },
+    "render_search_range": {
+        "avg": 0.24923907,
+        "std": 0.040086895
+    },
+    "sizes": {
+        "node_radius": 0.2,
+        "scene_radius": 103.16503
+    }
+}
