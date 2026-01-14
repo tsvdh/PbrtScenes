@@ -1,10 +1,11 @@
 {
     "graphBuilder": {
-        "dimensionSteps": 200,
-        "iterationsPerStep": 400,
+        "dimensionSteps": 400,
+        "iterationsPerStep": 500,
         "maxDepth": 10,
         "radiusModifier": 1,
         "renderSearchRange": {
+            "active": true,
             "neighboursToUse": 5,
             "runInParallel": true
         },

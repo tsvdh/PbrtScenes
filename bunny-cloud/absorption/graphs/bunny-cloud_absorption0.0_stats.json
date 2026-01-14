@@ -1,23 +1,23 @@
 {
     "amounts": {
-        "edges": 5395381,
-        "vertices": 882003
+        "edges": 10323903,
+        "vertices": 1078518
     },
     "duration": {
-        "formatted": "2m 12s",
-        "seconds": 132
+        "formatted": "3m 19s",
+        "seconds": 199
     },
     "edges": {
-        "more_than_once": 667838,
-        "more_than_once_ratio": 0.12377958
+        "more_than_once": 2240004,
+        "more_than_once_ratio": 0.21697259
     },
     "in_node_path_length": {
-        "avg": 1.0761713,
-        "std": 0.29024604
+        "avg": 1.0530133,
+        "std": 0.28729978
     },
     "render_search_range": {
-        "avg": 0.030919986,
-        "std": 0.0040360126
+        "avg": 0.029767983,
+        "std": 0.0032933853
     },
     "sizes": {
         "node_radius": 0.023382688,

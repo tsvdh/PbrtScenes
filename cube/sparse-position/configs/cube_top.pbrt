@@ -11,7 +11,7 @@ Film "rgb"
 Sampler "sobol" "integer pixelsamples" [64]
 Integrator "graph" 
 
-LookAt  0 10 0
+LookAt  0 20 0
         0  0 0
        10  0 0
         
@@ -32,8 +32,8 @@ MakeNamedMedium "cube" "string type" "homogeneous"
 AttributeBegin
     # Scale 0.1 0.1 0.1
     # Scale 1 1 1
-    Scale 2.5 2.5 2.5 
-    # Scale 5 5 5
+    # Scale 2.5 2.5 2.5 
+    Scale 5 5 5
     # Scale 10 10 10 
     MediumInterface "cube" ""
     Material "interface"

@@ -1,6 +1,6 @@
 @echo off 
 
-set volume_sizes=0.1 0.2 0.5 1.0
+set volume_sizes=0.1 0.2 0.5
 set spp=128
 
 for %%v in (%volume_sizes%) do (

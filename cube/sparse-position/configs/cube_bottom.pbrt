@@ -5,15 +5,15 @@ Film "rgb"
     "float whitebalance" 5000
     "string filename" "cube.exr"
 
-Sampler "sobol" "integer pixelsamples" [128]
-Integrator "volpathcustom" "integer maxdepth" 1
+# Sampler "sobol" "integer pixelsamples" [128]
+# Integrator "volpathcustom" "integer maxdepth" 1
 
-# Sampler "sobol" "integer pixelsamples" [64]
-# Integrator "graph" 
+Sampler "sobol" "integer pixelsamples" [64]
+Integrator "graph" 
 
-LookAt  10 0 0
-         0 0 0
-         0 1 0
+LookAt  0 -20 0
+        0   0 0
+       10   0 0
         
 Camera "perspective"
     "float fov" 45
@@ -32,8 +32,8 @@ MakeNamedMedium "cube" "string type" "homogeneous"
 AttributeBegin
     # Scale 0.1 0.1 0.1
     # Scale 1 1 1
-    Scale 2.5 2.5 2.5 
-    # Scale 5 5 5
+    # Scale 2.5 2.5 2.5 
+    Scale 5 5 5
     # Scale 10 10 10 
     MediumInterface "cube" ""
     Material "interface"
