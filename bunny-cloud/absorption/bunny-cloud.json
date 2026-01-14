@@ -1,7 +1,7 @@
 {
     "graphBuilder": {
         "dimensionSteps": 400,
-        "iterationsPerStep": 500,
+        "iterationsPerStep": 1000,
         "maxDepth": 10,
         "radiusModifier": 1,
         "renderSearchRange": {
@@ -13,13 +13,13 @@
             "active": true,
             "unsatisfiedAllowedRatio": 0.0001,
             "reinforcementRays": 3,
-            "edgesForNotSparse": 5
+            "edgesForNotSparse": 10
         },
         "neighbourReinforcement": {
             "active": true,
             "unsatisfiedAllowedRatio": 0.001,
             "reinforcementRays": 30,
-            "neighboursForNotSparse": 5,
+            "neighboursForNotSparse": 8,
             "neighbourRangeModifier": 3
         }
     },
